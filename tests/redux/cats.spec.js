@@ -18,7 +18,7 @@ const fakeCats = [
 ]
 
 
-xdescribe('Redux - Cats', () => {
+describe('Redux - Cats', () => {
 
   describe('Initial state', () => {
     it('should have an empty array as the initial state', () => {

@@ -8,6 +8,6 @@ import Routes from './Routes'
 
 export default () => (
   <div>
-    <Routes></Routes>
+    <Routes> </Routes>
   </div>
 )
