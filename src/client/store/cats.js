@@ -12,7 +12,8 @@ const initialState = [];
 // ACTION CREATORS
 export const loadCats = (data) => ({
   // some stuff might go in here? hmmmmm.....
-  type:"LOAD_CATS", data
+  type:"LOAD_CATS", cats:data
+
 })
 
 
@@ -23,13 +24,14 @@ export const fetchCats = () => async (dispatch) => {
   return dispatch(loadCats(cats))
 }
 
+
 // REDUCER
 // just modify inside the switch statement by adding cases.
 // don't modify what the function takes
 export default function (state = initialState, action) {
   switch (action.type) {
     case "LOAD_CATS": 
-        return action.data;
+        return action.cats;
     default: return state;
   }
 }

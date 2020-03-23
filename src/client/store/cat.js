@@ -10,7 +10,7 @@ const initialState = {};
 // ACTION CREATORS
 export const loadCat = data => ({
   // what kinda stuff goes in here?
-  type:"LOAD_CAT",data
+  type:"LOAD_CAT",cat:data
 })
 
 // THUNK CREATORS
@@ -26,7 +26,7 @@ export const fetchCat = id => async (dispatch) => {
 export default function (state = initialState, action) {
   switch (action.type) {
     case "LOAD_CAT": 
-      return action.data;
+      return action.cat;
 
     default: return state;
   }

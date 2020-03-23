@@ -19,12 +19,12 @@ export class DisconnectedSingleCat extends React.Component {
       <div className='single-cat'>
         <h2>{this.props.name}</h2>
         <img src={this.props.imageUrl} />
-        <ul>
+        <ul  className='toys'>
           {
             this.props.toyRatings.map((toy,idx)=>{
              // console.log(toy.name,toy.toyLikeness)
               return(
-                <li key={idx} className='toys'>
+                <li key={idx}>
                    {toy.name}
                 </li>
                 )

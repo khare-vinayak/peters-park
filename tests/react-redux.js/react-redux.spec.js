@@ -4,7 +4,7 @@ import { spy } from 'sinon'
 
 // These test only check for your react-redux portions and see if
 // the mapStateToProps and mapDispatchToProps are correct
-// You should be able to reason what parts of the state each component needs
+// You should be able to reason wxhat parts of the state each component needs
 // but you can use this to guide you
 import { mapStateToProps as AllCatsMapState, mapDispatchToProps as AllCatsMapDispatch } from '../../src/client/components/AllCats'
 import { mapStateToProps as SingleCatMapState, mapDispatchToProps as SingleCatMapDispatch } from '../../src/client/components/SingleCat'

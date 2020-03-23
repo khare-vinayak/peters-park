@@ -6,6 +6,7 @@ export default class Park extends Component {
     super();
     this.state = {
       // your state here
+    
     }
   }
 
