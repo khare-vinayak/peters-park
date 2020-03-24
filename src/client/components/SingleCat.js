@@ -53,13 +53,13 @@ export class DisconnectedSingleCat extends React.Component {
 
 export const mapStateToProps = (state) => {
   return {
-    cat:state.cat
+  ...state.cat
   }
 }
 
 export const mapDispatchToProps = (dispatch) => {
   return {
-
+    goGetCat:()=>dispatch({ type: "LOAD_CAT" })
   }
 }
 
